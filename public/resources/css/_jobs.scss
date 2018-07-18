@@ -1,0 +1,60 @@
+.job{
+    &-box{
+        background: #fff;
+        .tab{
+           a{
+            color: $primary_color;
+            border-bottom: 1px solid rgba(0,0,0,0.16);
+            &.active{
+                color : $second_color;
+            }
+           }
+        }
+    }
+    &-list{
+        padding: 8px !important;
+    }
+    &-item{
+      background : #fff;
+      padding: 4px !important;
+      border-top: 1px solid rgba(0,0,0,.09);
+      &:first-child{
+          border-top: none;
+      }
+
+      .left-content{
+          width: 100px;
+          float: left;
+          overflow: hidden;
+      }
+      .right-content{
+          padding: 8px 10px;
+          width: calc( 100% - 100px );
+          float : left;
+      }
+    
+    }
+    &-title{
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0px;
+        padding: 4px 0px;
+    }
+    &-company{
+        display: inline-block;
+        padding: 6px 0px;
+        color: $primary_color;
+    }
+    &-salary{
+        font-weight: 600;
+        color: $second_color;
+    }
+    &-location-filter{
+       a{
+        color: $primary_color;
+       }
+    }
+   
+    
+    
+}
